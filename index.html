@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOG Control de Plagas | Fumigación de Cucarachas, Chinches y Roedores</title>
+  <meta name="description" content="Eliminamos cucarachas, chinches, hormigas, mosquitos, arañas y roedores de tu hogar, negocio o transporte. Servicio de fumigación rápido, seguro y con licencia sanitaria. Cotiza por WhatsApp.">
+  <meta name="keywords" content="control de plagas, fumigación, exterminador de cucarachas, eliminar chinches, control de roedores, fumigación de tráileres, plagas hogar negocio, KOG control de plagas">
+  <meta property="og:title" content="KOG Control de Plagas | Fumigación Profesional">
+  <meta property="og:description" content="Servicio de control de plagas para hogares, negocios y transportes. Rápido, seguro y con licencia sanitaria vigente.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="ld-logo">
+    <img src="logo.png" alt="KOG Control de Plagas" class="ld-logo-img">
+  </div>
+  <div class="ld-progress">
+    <div class="ld-track"><div class="ld-fill"></div></div>
+    <p class="ld-note">Cargando</p>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Menú principal">
+  <div class="nav-wrap">
+    <a href="#" class="logo" aria-label="KOG Control de Plagas">
+      <img src="logo.png" alt="KOG Control de Plagas" class="nav-logo-img">
+    </a>
+    <ul class="nav-links" role="list">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Servicios</a></li>
+      <li><a href="#products">Plagas</a></li>
+      <li><a href="#why">Por qué Elegirnos</a></li>
+      <li><a href="#contact" class="nav-cta">Cotizar Ahora</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div id="mob" class="mob-menu" role="navigation" aria-label="Menú móvil">
+  <a href="#about">Nosotros</a>
+  <a href="#services">Servicios</a>
+  <a href="#products">Plagas</a>
+  <a href="#why">Por qué Elegirnos</a>
+  <a href="#contact">Cotizar Ahora</a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section id="hero" aria-label="Encabezado principal">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-ov" aria-hidden="true"></div>
+  <canvas id="pcanvas" aria-hidden="true"></canvas>
+
+  <div class="hero-body">
+    <div class="wrap">
+      <p class="hero-eyebrow">KOG Control de Plagas · Licencia Sanitaria Vigente</p>
+      <h1 class="hero-h1">
+        <span class="h1-line"><span class="h1-inner">Dile Adiós a las</span></span>
+        <span class="h1-line"><span class="h1-inner">Plagas de tu</span></span>
+        <span class="h1-line h1-accent"><span class="h1-inner"><span class="accent-cycle" id="accentCycle">Hogar</span></span></span>
+      </h1>
+      <p class="hero-p">
+        Eliminamos cucarachas, chinches, hormigas, mosquitos, arañas y roedores con equipo profesional y productos seguros para tu familia y tus mascotas. Servicio rápido, discreto y con licencia sanitaria.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn-primary">
+          Solicitar Cotización
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#services" class="btn-secondary">Ver Servicios</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Cifras clave">
+    <div class="wrap">
+      <div class="stats-row">
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="6" data-prefix="+" data-suffix="">+0</span>
+          <span class="stat-lbl">Plagas que eliminamos</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="100" data-prefix="" data-suffix="%">0%</span>
+          <span class="stat-lbl">Servicio seguro y garantizado</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="24" data-prefix="" data-suffix="h">0h</span>
+          <span class="stat-lbl">Tiempo de respuesta</span>
+        </div>
+        <div class="stat-col">
+          <span class="stat-val" data-hero-count="7" data-prefix="" data-suffix="">0</span>
+          <span class="stat-lbl">Días de atención a la semana</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-deco" aria-hidden="true">
+    <div class="hero-orb hero-orb--1"></div>
+    <div class="hero-orb hero-orb--2"></div>
+    <div class="hero-beam"></div>
+  </div>
+  <div class="hero-scroll-cue" aria-hidden="true">
+    <svg width="22" height="34" viewBox="0 0 22 34" fill="none">
+      <rect x="1" y="1" width="20" height="32" rx="10" stroke="rgba(255,255,255,.25)" stroke-width="1.5"/>
+      <circle class="mouse-dot" cx="11" cy="9" r="3" fill="rgba(255,255,255,.55)"/>
+    </svg>
+    <span class="scroll-label">Scroll</span>
+  </div>
+  <div class="hero-badge" aria-hidden="true">
+    <span class="hb-dot"></span>
+    <span class="hb-text">Licencia sanitaria vigente</span>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<section id="trust" aria-label="Compromisos de servicio">
+  <div class="wrap">
+    <div class="trust-row">
+      <p class="trust-label">Comprometidos con</p>
+      <div class="trust-chips">
+        <span class="trust-chip">Licencia Sanitaria</span>
+        <span class="trust-chip">Servicio Garantizado</span>
+        <span class="trust-chip">Equipo Profesional</span>
+        <span class="trust-chip">Productos Seguros</span>
+        <span class="trust-chip">Hogar y Negocio</span>
+        <span class="trust-chip">Transporte y Tráileres</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-white">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-img-wrap rev from-l">
+        <div class="about-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1674485127842-7b63ac41db8c?auto=format&fit=crop&w=800&q=80"
+            alt="Técnico de KOG Control de Plagas aplicando fumigación profesional" loading="lazy">
+        </div>
+        <div class="about-accent">
+          <p class="a-num">100%</p>
+          <p class="a-lbl">Servicio garantizado</p>
+        </div>
+      </div>
+      <div class="about-text rev">
+        <p class="eyebrow">Quiénes somos</p>
+        <h2 class="heading">Expertos en Control de Plagas para tu Hogar y Negocio</h2>
+        <p>En KOG Control de Plagas eliminamos cucarachas, chinches, hormigas, mosquitos, arañas y roedores con un servicio profesional, rápido y seguro. Contamos con licencia sanitaria vigente y equipo especializado para tratar cualquier tipo de infestación.</p>
+        <p>Atendemos casas, negocios, oficinas y también transportes como tráileres, dejando tus espacios libres de plagas con productos seguros para tu familia, tus clientes y tus mascotas.</p>
+        <div class="about-stats">
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="6" data-prefix="+" data-suffix=""></p>
+            <p class="a-stat-l">Plagas controladas</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="100" data-prefix="" data-suffix="%"></p>
+            <p class="a-stat-l">Productos seguros</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="24" data-prefix="" data-suffix="h"></p>
+            <p class="a-stat-l">Tiempo de respuesta</p>
+          </div>
+          <div class="a-stat">
+            <p class="a-stat-n" data-count="7" data-prefix="" data-suffix=""></p>
+            <p class="a-stat-l">Días de atención</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section bg-off">
+  <div class="wrap">
+    <div class="section-head section-head--center">
+      <p class="eyebrow">Lo que hacemos</p>
+      <h2 class="heading">Servicios Especializados de Fumigación</h2>
+      <p class="sub">Tratamientos a la medida para que tu hogar, negocio o transporte quede libre de plagas, con equipo profesional y respaldo técnico.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card rev d1">
+        <span class="svc-num" aria-hidden="true">01</span>
+        <div class="svc-icon ic-blue">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+            <line x1="12" y1="22.08" x2="12" y2="12"/>
+          </svg>
+        </div>
+        <h3>Fumigación para Hogar y Negocio</h3>
+        <p>Control integral de cucarachas, hormigas, arañas y mosquitos en casas, oficinas, restaurantes y comercios. Tratamiento seguro para toda la familia.</p>
+        <div class="svc-tags">
+          <span class="tag tag-b">Cucarachas</span>
+          <span class="tag tag-b">Hormigas</span>
+          <span class="tag tag-b">Mosquitos</span>
+          <span class="tag tag-b">Arañas</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d2">
+        <span class="svc-num" aria-hidden="true">02</span>
+        <div class="svc-icon ic-green">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="1" y="3" width="15" height="13" rx="1"/>
+            <path d="M16 8h4l3 5v3h-7V8z"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+        </div>
+        <h3>Control Especializado de Chinches</h3>
+        <p>Eliminamos chinches de camas, colchones y muebles con equipo de vapor y calor a alta temperatura, sin dañar tus pertenencias.</p>
+        <div class="svc-tags">
+          <span class="tag tag-g">Vapor y calor</span>
+          <span class="tag tag-g">Colchones</span>
+          <span class="tag tag-g">Muebles</span>
+        </div>
+      </div>
+
+      <div class="svc-card rev d3">
+        <span class="svc-num" aria-hidden="true">03</span>
+        <div class="svc-icon ic-slate">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3>Fumigación de Transportes</h3>
+        <p>Servicio de fumigación para tráileres, camiones y unidades de transporte, cumpliendo con los estándares sanitarios que exige tu operación.</p>
+        <div class="svc-tags">
+          <span class="tag">Tráileres</span>
+          <span class="tag">Unidades de carga</span>
+          <span class="tag">Norma sanitaria</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS / PLAGAS -->
+<section id="products" class="section bg-white">
+  <div class="wrap">
+    <div class="prod-header">
+      <div>
+        <p class="eyebrow">Plagas que eliminamos</p>
+        <h2 class="heading">Control Total para Cada Tipo de Plaga</h2>
+      </div>
+      <a href="#contact" class="btn-outline rev">Solicitar Cotización</a>
+    </div>
+    <div class="prod-grid">
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/>
+            <path d="M3 9V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v4"/>
+            <line x1="12" y1="3" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <h3>Cucarachas</h3>
+        <p>Eliminación de cucarachas americanas y alemanas en cocinas, drenajes y áreas húmedas.</p>
+        <span class="prod-pill">Rastreras</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M2 12H4M20 12h2M17.66 17.66l1.41 1.41M4.93 4.93l1.41 1.41"/>
+          </svg>
+        </div>
+        <h3>Chinches</h3>
+        <p>Tratamiento con vapor y calor para colchones, camas y muebles infestados.</p>
+        <span class="prod-pill">Camas y Muebles</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <h3>Hormigas</h3>
+        <p>Control de hormigueros y rutas de hormigas en interiores y exteriores.</p>
+        <span class="prod-pill">Rastreras</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="3"/>
+            <line x1="12" y1="2" x2="12" y2="6"/>
+            <line x1="12" y1="18" x2="12" y2="22"/>
+          </svg>
+        </div>
+        <h3>Mosquitos</h3>
+        <p>Fumigación de jardines y exteriores para reducir la población de mosquitos.</p>
+        <span class="prod-pill">Voladoras</span>
+      </div>
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <h3>Arañas</h3>
+        <p>Eliminación de arañas y sus telarañas en interiores, bodegas y exteriores.</p>
+        <span class="prod-pill">Rastreras</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+          </svg>
+        </div>
+        <h3>Roedores</h3>
+        <p>Control de ratas y ratones con trampas y cebos seguros para tu hogar.</p>
+        <span class="prod-pill">Roedores</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/>
+            <line x1="10" y1="1" x2="10" y2="4"/>
+            <line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </div>
+        <h3>Garrapatas</h3>
+        <p>Tratamiento de jardines y patios para eliminar garrapatas.</p>
+        <span class="prod-pill">Exteriores</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+          </svg>
+        </div>
+        <h3>Pulgas</h3>
+        <p>Control de pulgas en pisos, alfombras y áreas de mascotas.</p>
+        <span class="prod-pill">Interiores</span>
+      </div>
+
+      <div class="prod-card rev d1">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+          </svg>
+        </div>
+        <h3>Moscas</h3>
+        <p>Reducción de moscas en cocinas, restaurantes y áreas de comida.</p>
+        <span class="prod-pill">Voladoras</span>
+      </div>
+
+      <div class="prod-card rev d2">
+        <div class="p-icon ic-blue">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+        </div>
+        <h3>Avispas</h3>
+        <p>Retiro seguro de nidos de avispas y abejas en tu propiedad.</p>
+        <span class="prod-pill">Voladoras</span>
+      </div>
+
+      <div class="prod-card rev d3">
+        <div class="p-icon ic-green">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+          </svg>
+        </div>
+        <h3>Polillas</h3>
+        <p>Control de polillas en closets, bodegas y almacenes de textiles.</p>
+        <span class="prod-pill">Interiores</span>
+      </div>
+
+      <div class="prod-card rev d4">
+        <div class="p-icon ic-slate">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#374151" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <h3>Plagas de Bodega</h3>
+        <p>Fumigación de almacenes, bodegas y centros de distribución.</p>
+        <span class="prod-pill">Industrial</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY KOG -->
+<section id="why" class="section bg-navy">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="why-img-wrap rev from-r">
+        <div class="why-img-main">
+          <img
+            src="https://images.unsplash.com/photo-1610891170442-79392fc76493?auto=format&fit=crop&w=800&q=80"
+            alt="Aplicación profesional de fumigación contra plagas" loading="lazy">
+        </div>
+        <div class="why-img-badge">
+          <p class="wib-n">100%</p>
+          <p class="wib-l">Licencia sanitaria</p>
+        </div>
+      </div>
+      <div class="why-content rev">
+        <p class="eyebrow eyebrow--white">Por qué elegirnos</p>
+        <h2 class="heading heading--white">La Diferencia de Elegir a KOG</h2>
+        <p class="sub sub--white">Nos tomamos en serio la seguridad de tu hogar, tu negocio y las personas que los habitan.</p>
+        <div class="benefit-list">
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FE28A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Licencia Sanitaria Vigente</h4>
+              <p>Empresa autorizada y en regla, con productos y procesos que cumplen la normativa sanitaria vigente.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-g">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF8A80" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Equipo y Tecnología Profesional</h4>
+              <p>Fumigación con motomochila, tratamiento de vapor y calor para chinches, y productos certificados para cada tipo de plaga.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-b">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8FE28A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Servicio Rápido y Seguro</h4>
+              <p>Respuesta ágil y productos seguros para tu familia, tus clientes y tus mascotas, sin poner en riesgo tu espacio.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="ben-icon ben-icon-w">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <div>
+              <h4>Cobertura para Hogar, Negocio y Transporte</h4>
+              <p>Atendemos casas, oficinas, restaurantes, bodegas y unidades de transporte como tráileres.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="numbers-grid">
+      <div class="number-item rev d1">
+        <p class="num-v" data-count="6" data-prefix="+" data-suffix=""></p>
+        <p class="num-l">Tipos de plaga que eliminamos</p>
+      </div>
+      <div class="number-item rev d2">
+        <p class="num-v" data-count="100" data-prefix="" data-suffix="%"></p>
+        <p class="num-l">Servicio seguro y garantizado</p>
+      </div>
+      <div class="number-item rev d3">
+        <p class="num-v" data-count="24" data-prefix="" data-suffix="h"></p>
+        <p class="num-l">Tiempo de respuesta</p>
+      </div>
+      <div class="number-item rev d4">
+        <p class="num-v" data-count="365" data-prefix="" data-suffix=""></p>
+        <p class="num-l">Días del año disponibles</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORES -->
+<section id="brands">
+  <div class="wrap">
+    <div class="brands-head rev">
+      <p class="eyebrow eyebrow--white">Dónde trabajamos</p>
+      <h2 class="heading heading--white">Sectores que Atendemos</h2>
+      <p class="brands-sub">Control de plagas profesional para todo tipo de espacios, adaptando el tratamiento a cada necesidad.</p>
+    </div>
+    <div class="brands-grid">
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5V21a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>
+          </div>
+          <span class="sector-name">Hogares</span>
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <span class="sector-name">Restaurantes</span>
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><line x1="8" y1="6" x2="8" y2="6.01"/><line x1="16" y1="6" x2="16" y2="6.01"/><line x1="8" y1="10" x2="8" y2="10.01"/><line x1="16" y1="10" x2="16" y2="10.01"/><line x1="8" y1="14" x2="8" y2="14.01"/><line x1="16" y1="14" x2="16" y2="14.01"/><line x1="10" y1="22" x2="10" y2="18"/><line x1="14" y1="22" x2="14" y2="18"/></svg>
+          </div>
+          <span class="sector-name">Oficinas</span>
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8h20v13H2z"/><path d="M2 8 12 2l10 6"/><path d="M12 12v9"/></svg>
+          </div>
+          <span class="sector-name">Bodegas y Almacenes</span>
+        </div>
+      </div>
+      <div class="brand-card rev d5">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22V8l7-5 7 5v14"/><path d="M9 22V12h6v10"/><path d="M16 8h4l2 4v10h-6"/></svg>
+          </div>
+          <span class="sector-name">Hoteles</span>
+        </div>
+      </div>
+      <div class="brand-card rev d1">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
+          </div>
+          <span class="sector-name">Escuelas</span>
+        </div>
+      </div>
+      <div class="brand-card rev d2">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.5-1.5 3-3.5 3-5.5A5.5 5.5 0 0 0 16.5 3c-2 0-3 .5-4.5 2-1.5-1.5-2.5-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2 1.5 4 3 5.5l7 7z"/><line x1="12" y1="7" x2="12" y2="13"/><line x1="9" y1="10" x2="15" y2="10"/></svg>
+          </div>
+          <span class="sector-name">Hospitales y Clínicas</span>
+        </div>
+      </div>
+      <div class="brand-card rev d3">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="7" width="15" height="10" rx="1"/><path d="M16 10h4l3 3.5V17h-7z"/><circle cx="5.5" cy="19" r="2"/><circle cx="18.5" cy="19" r="2"/></svg>
+          </div>
+          <span class="sector-name">Transporte y Tráileres</span>
+        </div>
+      </div>
+      <div class="brand-card rev d4">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/><line x1="9" y1="11" x2="9" y2="11.01"/><line x1="15" y1="11" x2="15" y2="11.01"/></svg>
+          </div>
+          <span class="sector-name">Condominios</span>
+        </div>
+      </div>
+      <div class="brand-card rev d5">
+        <div class="brand-card-inner">
+          <div class="sector-icon" aria-hidden="true">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#D1272C" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22V11l6-4v4l6-4v4l6-4v15z"/><line x1="6" y1="22" x2="6" y2="18"/><line x1="12" y1="22" x2="12" y2="18"/><line x1="18" y1="22" x2="18" y2="18"/></svg>
+          </div>
+          <span class="sector-name">Industria y Fábricas</span>
+        </div>
+      </div>
+    </div>
+    <p class="brands-note rev">Servicio profesional adaptado a cada tipo de espacio</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-off">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info rev from-l">
+        <p class="eyebrow">Contáctanos</p>
+        <h2 class="heading">Agenda tu Fumigación Hoy Mismo</h2>
+        <p class="sub" style="margin-bottom:36px">Escríbenos por WhatsApp y te ayudamos a elegir el tratamiento ideal para tu hogar, negocio o transporte. Respuesta rápida garantizada.</p>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16.27z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Llámanos</p>
+            <p class="c-value"><a href="tel:+525643096048">+52 56 4309 6048</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">WhatsApp</p>
+            <p class="c-value"><a href="https://wa.me/525643096048" target="_blank" rel="noopener noreferrer">Escríbenos ahora</a></p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Cobertura</p>
+            <p class="c-value">Servicio a domicilio para hogares y negocios en tu localidad</p>
+          </div>
+        </div>
+        <div class="c-item">
+          <div class="c-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4C9A2A" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div>
+            <p class="c-label">Tipo de atención</p>
+            <p class="c-value">Hogar · Negocio · Transporte (tráileres)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="rev">
+        <div class="form-wrap">
+          <h3>Solicita tu Cotización</h3>
+          <p class="form-sub">Te respondemos por WhatsApp en minutos.</p>
+          <form id="cForm" novalidate>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="fn">Nombre completo *</label>
+                <input class="fi" type="text" id="fn" name="nombre" placeholder="Su nombre completo" required autocomplete="name">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fe">Empresa / Negocio (opcional)</label>
+                <input class="fi" type="text" id="fe" name="empresa" placeholder="Nombre de tu negocio" autocomplete="organization">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label class="fl" for="ft">Teléfono *</label>
+                <input class="fi" type="tel" id="ft" name="telefono" placeholder="+52 55 0000 0000" required autocomplete="tel">
+              </div>
+              <div class="fg">
+                <label class="fl" for="fem">Correo electrónico</label>
+                <input class="fi" type="email" id="fem" name="email" placeholder="correo@ejemplo.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fs">Tipo de servicio *</label>
+              <select class="fi" id="fs" name="tipo" required>
+                <option value="">Seleccione el tipo de servicio</option>
+                <option value="Control de cucarachas y hormigas">Control de cucarachas y hormigas</option>
+                <option value="Control de chinches">Control de chinches</option>
+                <option value="Control de mosquitos">Control de mosquitos</option>
+                <option value="Control de arañas">Control de arañas</option>
+                <option value="Control de roedores">Control de roedores</option>
+                <option value="Fumigación de transporte (tráiler)">Fumigación de transporte (tráiler)</option>
+                <option value="Fumigación general (hogar/negocio)">Fumigación general (hogar/negocio)</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label class="fl" for="fm">Cuéntanos tu problema de plagas *</label>
+              <textarea class="fi" id="fm" name="mensaje" rows="4" placeholder="Describe el tipo de plaga y el espacio a tratar (casa, negocio, tráiler, etc.)..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+              Enviar por WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo">
+          <div class="foot-logo-wrap">
+            <img src="logo.png" alt="KOG Control de Plagas" class="foot-logo-img">
+          </div>
+        </div>
+        <p class="foot-desc">En KOG Control de Plagas eliminamos cucarachas, chinches, hormigas, mosquitos, arañas y roedores con un servicio rápido, seguro y con licencia sanitaria vigente.</p>
+      </div>
+      <div>
+        <p class="foot-col-title">Servicios</p>
+        <ul class="foot-links">
+          <li><a href="#services">Fumigación Hogar y Negocio</a></li>
+          <li><a href="#services">Control de Chinches</a></li>
+          <li><a href="#services">Fumigación de Transportes</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Plagas</p>
+        <ul class="foot-links">
+          <li><a href="#products">Cucarachas y Hormigas</a></li>
+          <li><a href="#products">Mosquitos y Arañas</a></li>
+          <li><a href="#products">Roedores</a></li>
+          <li><a href="#products">Ver todas las plagas</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="foot-col-title">Contacto</p>
+        <ul class="foot-links">
+          <li><a href="tel:+525643096048">+52 56 4309 6048</a></li>
+          <li><a href="https://wa.me/525643096048" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a></li>
+          <li><a href="#contact">Cotizar Servicio</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 <span>KOG Control de Plagas</span>. Todos los derechos reservados.</p>
+      <p>Hogar · Negocio · Transporte</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<div class="wa-float">
+  <span class="wa-tip">Escríbenos por WhatsApp</span>
+  <a href="https://wa.me/525643096048"
+     target="_blank"
+     rel="noopener noreferrer"
+     class="wa-btn"
+     aria-label="Contactar a KOG Control de Plagas por WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true">
+      <path fill="#fff" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
